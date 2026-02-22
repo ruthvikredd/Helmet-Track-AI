@@ -1,0 +1,22 @@
+# Helmettrack Project - Python Dependencies
+
+# Web Framework
+Flask==2.3.2
+Werkzeug==2.3.6
+
+# Database
+mysql-connector-python==8.0.33
+
+# AI/ML and Computer Vision
+ultralytics==8.0.146
+torch==2.0.1
+torchvision==0.15.2
+opencv-python==4.8.0.74
+numpy==1.24.3
+
+# SMS Notifications
+twilio==8.10.0
+
+# Utilities
+python-dotenv==1.0.0
+Pillow==10.0.0
