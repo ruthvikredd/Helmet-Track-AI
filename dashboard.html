@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(221, 184, 116);
+        }
+        
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+.menu{
+    height: 45px; 
+    height: auto; 
+    width: auto;
+    background-color: lightgray;
+    border-radius: 30px;
+    font-size: 40px;   
+    float: left; 
+    box-shadow: 10px 10px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu ul{
+    padding:15px; list-style: none;
+}
+
+.menu li{
+    
+    float: left; padding:0px 30px;
+}
+
+.menu li a{
+    text-align: center;
+    color:orangered; text-decoration: none;
+}
+
+.menu li a:hover{
+    color:blue; padding:5px 30px; background-color: cyan; display: block; border-radius: 50%; text-decoration: underline; transition: 1s; 
+}
+.int1{
+    height: 300px;
+    width: 300px;
+}
+
+        </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <div class="menu">
+    <ul>
+<li><a  href="/add_user">Add User</a><br></li>
+<li><a  href="/view_users">View Users</a><br></li>
+<li><a  href="/run_prediction">Photo Detection</a><br></li>
+<li><a  href="/upload_video">Video Detection</a><br></li>
+<li><a  href="/logout">Logout</a></li>
+<li><a href="/no_helmet_records">No Helmet Records</a></li>
+</ul>
+    </div>
+</body>
+</html>
+

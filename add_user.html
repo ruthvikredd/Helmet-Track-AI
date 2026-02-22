@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      h1{
+        background-color: blue;
+        border-radius: 20px;
+
+      }
+      body{
+        background-color: rgb(211, 109, 109);
+        border-radius: 20px;
+        
+      }
+       button{
+        background-color: red;
+        color: white;
+        border-radius: 20px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<form action="/add_user" method="POST" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <th>
+                <h1>Add User</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Name: <input name="name" placeholder="enter your name"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Aadhar: <input name="aadhar" placeholder="xxxx xxxx xxxx"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Phone Number: <input type="tel" name="phone_number" placeholder="10-digit mobile number" required><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Photo: <input type="file" name="photo"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>Add User</button>
+            </td>
+        </tr>
+    </table>
+    </div>
+</form>
+</body>
+</html>

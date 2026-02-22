@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(153, 234, 207);
+        }
+        table{
+            border-collapse: collapse;
+            border-color: red;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Users</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Aadhar</th>
+        <th>Photo</th>
+    </tr>
+
+    {% for u in users %}
+    <tr>
+        <td>{{u[0]}}</td>
+        <td>{{u[1]}}</td>
+        <td>{{u[3]}}</td>
+        <td><img src="/static/uploads/{{u[2]}}" width="200"></td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
